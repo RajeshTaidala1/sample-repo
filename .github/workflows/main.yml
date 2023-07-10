@@ -1,13 +1,17 @@
-name: Deploy to production
+name: CI
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  deploy:
-    name: Deploy to production
+  build:
+    name: CI
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
-      - name: Run Print command
-        run: print Hello Rajesh
+      - name: Using checkout action
+        uses: actions/checkout@v2.1.0
+      - name: Run a one line script
+        run: echo Hello Rajesh
