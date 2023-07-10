@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.1.0
-      - name: Run ls command
-        run: ls
+      - name: Run Print command
+        run: print("Hello Rajesh")
