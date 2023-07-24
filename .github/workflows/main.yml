@@ -14,4 +14,4 @@ jobs:
       - name: Using checkout action
         uses: actions/checkout@v2.1.0
       - name: Run a one line script
-        run: echo Hello Rajesh, how are you
+        run: echo Hello Rajesh, how are you!
